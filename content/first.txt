@@ -1,0 +1,4 @@
+{
+    first: 'the first text',
+    second: 'the second file'
+}

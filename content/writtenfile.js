@@ -1,0 +1,1 @@
+const thisObject = new Object;thisObject.first = 2
