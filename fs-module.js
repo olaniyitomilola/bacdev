@@ -1,12 +1,13 @@
 const file = require('fs');
+const path = require('path')
 
 
 
 //readfile
 
-const firstText = file.readFileSync('./content/first.txt','utf8');
+//const firstText = file.readFileSync('./content/first.txt','utf8');
 
-console.log(firstText);
+//console.log(firstText);
 
 
 //write file
@@ -30,6 +31,31 @@ const writeThenRead = (command)=>{
         reject();
     })
 }
-writeThenRead('thisObject.first = 2').then(()=>{
-    console.log(file.readFileSync('./content/writtenfile.js','utf8'))
-})
+//writeThenRead('thisObject.first = 2').then(()=>{
+  //  console.log(file.readFileSync('./content/writtenfile.js','utf8'))
+//})
+
+file.writeFile(
+    path.resolve(__dirname,'content','test.txt'),
+    'trying this without the third arguement which is supposed to be a call back',
+    {flag: 'a'},
+    (err,result)=>{
+        if(err){
+            console.log(err);
+            return
+        } 
+       result = file.readFile(
+            path.resolve(__dirname,'content','test.txt'), 'utf8',
+            (err,data)=>{
+                if(err){
+
+                    console.log(err)
+                    return
+                }
+                console.log(data);
+
+            }
+        )
+    }
+
+)

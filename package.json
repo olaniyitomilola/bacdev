@@ -1,0 +1,22 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "my first npm package",
+  "main": "npm-module.js",
+  "scripts": {
+    "test": "firstapp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olaniyitomilola/bacdev.git"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "tomilola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olaniyitomilola/bacdev/issues"
+  },
+  "homepage": "https://github.com/olaniyitomilola/bacdev#readme"
+}
