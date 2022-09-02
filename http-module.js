@@ -11,6 +11,7 @@ const server = http.createServer((req,res)=>{
     } 
     if(req.url === '/about')  {
         res.end('here is the about page')
+        //.end = endpoint
         
     } 
 

@@ -1,22 +1,26 @@
 {
-  "name": "firstapp",
+  "name": "bacdev",
   "version": "1.0.0",
-  "description": "my first npm package",
-  "main": "npm-module.js",
+  "description": "The first package",
+  "main": "http-module.js",
   "scripts": {
-    "test": "firstapp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/olaniyitomilola/bacdev.git"
   },
-  "keywords": [
-    "key"
-  ],
-  "author": "tomilola",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/olaniyitomilola/bacdev/issues"
   },
-  "homepage": "https://github.com/olaniyitomilola/bacdev#readme"
+  "homepage": "https://github.com/olaniyitomilola/bacdev#readme",
+  "dependencies": {
+    "3d": "^0.0.0",
+    "backbone": "^1.4.1",
+    "bootstrap": "^5.2.0",
+    "lodash": "^4.17.21"
+  }
 }
