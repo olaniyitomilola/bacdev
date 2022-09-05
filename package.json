@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node http-module.js",
-    "startmon": "nodemon http-module.js"
+    "startmon": "nodemon async-pattern.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
   "homepage": "https://github.com/olaniyitomilola/bacdev#readme",
   "dependencies": {
     "backbone": "^1.4.1",
-    "lodash": "^4.17.21",
     "nodemon": "^2.0.19"
   }
 }
