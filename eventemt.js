@@ -22,7 +22,13 @@ const http = require('http');
 const server = http.createServer();
 
 server.on('request',(req,res)=>{
+    if(req==='/'){
+        
+    }
     res.end('willkommen')
+})
+server.on('request',(req,res)=>{
+    console.log('opened')
 })
 server.on('response',(req,res)=>{
     console.log('requested made and response sent')
