@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node http-module.js",
-    "startmon": "nodemon async-pattern.js"
+    "startmon": "nodemon stream.js"
   },
   "repository": {
     "type": "git",
